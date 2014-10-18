@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!-- Load Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+		<link rel="icon" type="image/png" href="favicon.ico">
+
+		<title>Chart FullScreen Dialog</title>
+	</head>
+
+	<body>
+
+		<header>
+			<h1>HighCharts FullScreen Dialog Example</h1>
+			<p>Press the 'Fullscreen' button located next to the title on each box.</p>
+      <p>Feel free to move the boxes around in any order</p>
+      <p><strong>Note:</strong> Only the Pie Chart, Line Graph, and Bar Graph are setup for the full screen demo.</p>
+		</header>
+
+	<section class="chart-grid">
+	<div class="column">
+ 
+  <div class="portlet">
+    <div class="portlet-header">Pie Chart <button id="full-pie" class="fullscreen">Fullscreen</button></div>
+    <div id="highchart-pieBox" title="HighCharts Pie Chart">
+    <article class="portlet-content" id="highchart-pie"></article>
+    </div>
+  </div>
+ 
+  <div class="portlet">
+    <div class="portlet-header">Scatter Plot</div>
+    <div id="highchart-scatterBox" title="HighCharts Scatter Chart">
+    <div class="portlet-content" id="highchart-scatter"></div>
+    </div>
+    </div>
+
+    </div> <!-- End Column -->
+
+ 
+<div class="column">
+ 
+  <div class="portlet">
+    <div class="portlet-header">Line Graph <button id="full-line" class="fullscreen">Fullscreen</button></div>
+    <div id="highchart-lineBox" title="HighCharts Line Graph">
+    <article class="portlet-content" id="highchart-line"></article>
+    </div>
+  </div>
+
+  <div class="portlet">
+    <div class="portlet-header">Column Graph</div>
+    <div id="highchart-columnBox" title="HighCharts Column Graph">
+    <article class="portlet-content" id="highchart-column"></article>
+    </div>
+  </div>
+ 
+</div> <!-- End Column -->
+ 
+<div class="column">
+ 
+  <div class="portlet">
+    <div class="portlet-header">Bar Graph <button id="full-bar" class="fullscreen">Fullscreen</button></div>
+    <div id="highchart-barBox" title="HighCharts Bar Graph">
+    <article class="portlet-content" id="highchart-bar"></article>
+    </div>
+  </div>
+ 
+  <div class="portlet">
+    <div class="portlet-header">Live Data</div>
+    <div id="highchart-liveBox" title="HighCharts Live Graph">
+    <div class="portlet-content" id="highchart-live"></div>
+    </div>
+  </div>
+ 
+</div> <!-- End Column -->
+
+</section>
+
+				<!-- Load Scripts -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/highcharts.js"></script>
+    <script type="text/javascript" src="js/dialog.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+	</body>
+
+</html>
